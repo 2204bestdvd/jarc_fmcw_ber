@@ -27,13 +27,13 @@ var txDataLog = true;
 
 
 if (process.argv.length < 6) {
-    console.log("Tx data port not specified, use default COM9");
+    console.log("Tx data port not specified, use default " + txDataPortname);
     if (process.argv.length < 5) {
-        console.log("Tx cli port not specified, use default COM10");
+        console.log("Tx cli port not specified, use default " + txCliPortname);
         if (process.argv.length < 4) {
-            console.log("Rx data port not specified, use default COM5");
+            console.log("Rx data port not specified, use default " + rxDataPortname);
             if (process.argv.length < 3) {
-                console.log("Rx cli port not specified, use default COM4");
+                console.log("Rx cli port not specified, use default " + rxCliPortname);
             } else {
                 rxCliPortname = process.argv[2];
             }
@@ -188,15 +188,11 @@ function initLoadCli(filename, port) {
 }
 
 /*
-var txCfgFilename = '../AWR1642\ Application/mmwave_sdk_01_01_00_02/demo/profiles'
-                + '/ber/profile_ber_test_hw_trigger_slope_1_tx.cfg';
-var rxCfgFilename = '../AWR1642\ Application/mmwave_sdk_01_01_00_02/demo/profiles'
-                + '/ber/profile_ber_test_hw_trigger_slope_1_rx.cfg';
+var txCfgFilename = 'profiles/ber/profile_ber_test_hw_trigger_slope_1_tx.cfg';
+var rxCfgFilename = 'profiles/ber/profile_ber_test_hw_trigger_slope_1_rx.cfg';
 */
-var txCfgFilename = '../AWR1642\ Application/mmwave_sdk_01_01_00_02/demo/profiles'
-                + '/transmitter/profile_fft_test_hw_trigger_chirp_128_slope_1_tx.cfg';
-var rxCfgFilename = '../AWR1642\ Application/mmwave_sdk_01_01_00_02/demo/profiles'
-                + '/transmitter/profile_fft_test_hw_trigger_chirp_128_slope_1_rx.cfg';
+var txCfgFilename = 'profiles/transmitter/profile_fft_test_hw_trigger_chirp_128_slope_1_tx.cfg';
+var rxCfgFilename = 'profiles/transmitter/profile_fft_test_hw_trigger_chirp_128_slope_1_rx.cfg';
 
 
 
