@@ -1,0 +1,15 @@
+{
+  "name": "ber_measurement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ber.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "random-js": "^1.0.8",
+    "serialport": "^6.2.1"
+  }
+}
